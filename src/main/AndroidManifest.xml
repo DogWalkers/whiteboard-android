@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whiteboard"
+    android:versionCode="2"
+    android:versionName="1.0.0-SNAPSHOT" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.whiteboard.WhiteboardApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_label"
+        android:theme="@android:style/Theme.Holo" >
+        <activity
+            android:name="com.whiteboard.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.whiteboard.activities.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+    </application>
+
+</manifest>
