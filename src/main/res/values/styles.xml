@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.NoActionBar" parent="@style/Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.WhiteBoard" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/WhiteBoard.ActionBar</item>
+    </style>
+
+    <style name="WhiteBoard.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/wb_blue</item>
+        <item name="android:titleTextStyle">@style/WhiteBoard.ActionBar.TitleTextStyle</item>
+        <item name="android:icon">@drawable/whiteboard_actionbar_logo</item>
+    </style>
+
+    <style name="WhiteBoard.ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

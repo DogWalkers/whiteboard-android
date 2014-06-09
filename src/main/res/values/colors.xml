@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="wb_blue">#ff0095b3</color>
+    <color name="recommended_blue">#33b5e5</color>
+    <color name="titleStripBackgroundColor">#fff5f5f5</color>
 </resources>
