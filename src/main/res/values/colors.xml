@@ -3,4 +3,9 @@
     <color name="wb_blue">#ff0095b3</color>
     <color name="recommended_blue">#33b5e5</color>
     <color name="titleStripBackgroundColor">#fff5f5f5</color>
+
+    <color name="swipe_color1">#ffff000a</color>
+    <color name="swipe_color2">#ffff00e4</color>
+    <color name="swipe_color3">#ff0002ff</color>
+    <color name="swipe_color4">#ff00ff31</color>
 </resources>

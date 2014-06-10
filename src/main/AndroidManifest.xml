@@ -8,26 +8,32 @@
         android:minSdkVersion="18"
         android:targetSdkVersion="18" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.whiteboard.WhiteboardApplication"
+        android:name=".WhiteboardApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_label"
-        android:theme="@style/Theme.WhiteBoard">
+        android:theme="@style/Theme.WhiteBoard" >
         <activity
-            android:name="com.whiteboard.activities.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.whiteboard.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="" >
+        </activity>
+        <activity
+            android:name=".activities.ViewProjectActivity"
+            android:label=""
+            android:parentActivityName=".activities.MainActivity">
         </activity>
     </application>
 
