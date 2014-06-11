@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/abc_list_selector_holo_light"
-    android:paddingRight="15dp">
+    android:background="@drawable/list_item_background"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:padding="10dp"
+        android:gravity="top|left"
         android:text="Title" />
 
     <TextView
         android:id="@+id/tvCreator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvPositionTitle"
         android:text="creator"
         android:textSize="18dp"
         android:paddingLeft="10dp"
         android:paddingBottom="10dp"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvPositionTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_alignLeft="@id/tvTitle"
+        android:paddingLeft="15dp"
         android:text="position"
         android:textStyle="italic"
-        android:textSize="18dp"
-        android:paddingLeft="10dp"
-        android:paddingBottom="10dp"/>
+        android:textSize="16dp"
+        android:paddingBottom="12dp" />
 
     <TextView
         android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello"
+        android:layout_below="@id/tvPositionTitle"
+        android:text="Description"
         android:paddingTop="5dp"
         android:paddingLeft="25dp"
         android:paddingBottom="20dp"/>
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTimeCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="time" />
+
+</RelativeLayout>

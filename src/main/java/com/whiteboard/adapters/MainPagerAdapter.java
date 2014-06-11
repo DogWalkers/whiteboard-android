@@ -13,7 +13,7 @@ import com.whiteboard.fragments.FragmentC;
  */
 public class MainPagerAdapter extends FragmentPagerAdapter {
 
-    public static final String[] TITLES = {"Browse", "Add", "Discover"};
+    public static final String[] TITLES = {"Recent Projects", "Most Viewed", "Favourites"};
 
     public MainPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -21,7 +21,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = null;
+        Fragment fragment;
         switch (position){
             case 0:
                 fragment = new FragmentA();
